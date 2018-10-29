@@ -1,0 +1,6 @@
+numba
+torch
+thulac
+tqdm
+keras
+numpy
