@@ -1,5 +1,5 @@
 # Chinese Opinion Target Extraction
-Pytorch implement of "Character-based BiLSTM-CRF Incorporating POS and Dictionaries for Chinese Opinion Target Extraction"
+Pytorch implement of "Character-based BiLSTM-CRF Incorporating POS and Dictionaries for Chinese Opinion Target Extraction", ACML2018 [\[paper](http://proceedings.mlr.press/v95/li18d.html), [pdf\]](http://proceedings.mlr.press/v95/li18d/li18d.pdf)
 
 ### Dependency
 
@@ -23,6 +23,12 @@ numba
 
 > Note: It would cost about 10~20 minutes for pre-processing.
 
+### Architecture
+
+<div align=center>
+<img src="./images/architecture.png" width="500px" />
+</div>
+
 ### Results
 
 |   | Baidu | Mafengwo | Dianping |
@@ -30,3 +36,18 @@ numba
 | P | 85.791 | 83.273 | 83.753 |
 | R | 82.531 | 89.989 | 85.672 |
 | F1 | 84.130 | 86.501 | 84.702 |
+
+### Citation
+
+If you find this work is useful in your research, please consider citing:
+
+```
+@inproceedings{li2018character,
+  title={Character-based BiLSTM-CRF Incorporating POS and Dictionaries for Chinese Opinion Target Extraction},
+  author={Li, Yanzeng and Liu, Tingwen and Li, Diying and Li, Quangang and Shi, Jinqiao and Wang, Yanqiu},
+  booktitle={Asian Conference on Machine Learning},
+  pages={518--533},
+  year={2018}
+}
+```
+
