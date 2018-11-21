@@ -3,14 +3,15 @@ Pytorch implement of "Character-based BiLSTM-CRF Incorporating POS and Dictionar
 
 ### Dependency
 
-Python version >= 3.6
+While this implement might work for many cases, it is only tested for environment below:
 
 ```
-torch >= 0.4.0
-thulac
+python == 3.6.0
+torch == 0.4.1
+thulac == 0.2.0
 tqdm
-keras
-numpy
+keras == 2.1.2
+numpy == 1.15.3
 numba
 ```
 
