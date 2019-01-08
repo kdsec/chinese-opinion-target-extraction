@@ -1,6 +1,6 @@
-torch == 0.4.1
-thulac == 0.2.0
+torch==0.4.1
+thulac==0.2.0
 tqdm
-keras == 2.1.2
-numpy == 1.15.3
+keras==2.1.2
+numpy==1.15.3
 numba
