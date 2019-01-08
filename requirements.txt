@@ -1,6 +1,6 @@
-numba
-torch
-thulac
+torch==0.4.1
+thulac==0.2.0
 tqdm
-keras
-numpy
+keras==2.1.2
+numpy==1.15.3
+numba
