@@ -19,8 +19,8 @@ numba
 
 1. Install dependency
 2. Download dataset from [this repo](https://github.com/lsvih/chinese-customer-review), move files into `./dataset` folder, then unzip `dictionary.zip`.
-3. Train model: `python3 main.py --type=train --dataset=baidu`
-4. Test model: `python3 main.py --type=test --dataset=baidu`
+3. Train model: `python3 main.py --mode=train --dataset=baidu`
+4. Test model: `python3 main.py --mode=test --dataset=baidu`
 
 > Note: It would cost about 10~20 minutes for pre-processing.
 
