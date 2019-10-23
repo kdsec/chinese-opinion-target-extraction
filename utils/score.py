@@ -15,9 +15,9 @@ def score(input_file, test_file, result_path):
         rs = []
         start, end = 0, 0
         while start < len(tags) - 1:
-            if tags[start].split('_')[0] != 'O':
+            if tags[start].split('_')[0] != 'o':
                 while end < len(tags) - 1:
-                    if tags[end].split('_')[0] != 'O':
+                    if tags[end].split('_')[0] != 'o':
                         end += 1
                     else:
                         break

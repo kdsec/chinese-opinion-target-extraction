@@ -90,7 +90,7 @@ def make_dict_feat(chars):
 def construct_features(origin: dict) -> dict:
     features = {'content': origin['s'], 'label': origin['ot'], 'word': [], 'POS': [], 'char': [], 'char_pos': [],
                 'char_pos_tag': [], 'char_word_tag': []}
-    sentence = origin['s']
+    sentence = origin['s'].replace('\xa0','')
     # Segment
     cut_word, cut_pos = [], []
     tokens = segment_tool.cut(sentence)

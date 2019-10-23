@@ -24,7 +24,7 @@ class Data(Config):
         self.tag_alphabet = Tokenizer(char_level=True)
         self.tag_alphabet.fit_on_texts(map(lambda s: s['char_pos_tag'], self.sentences))
         self.dict_alphabet = Tokenizer(char_level=True)
-        self.dict_alphabet.fit_on_texts(map(lambda s: [sum([2 ** i * x for i, x in enumerate(word_dict)])
+        self.dict_alphabet.fit_on_texts(map(lambda s: [str(sum([2 ** i * x for i, x in enumerate(word_dict)]))
                                                        for word_dict in s['dict_feature']], self.sentences))
 
     def read_instance(self):
@@ -38,12 +38,12 @@ class Data(Config):
                 chars.append(char)
                 char_id.append(self.char_alphabet.get_index(char))
                 labels.append(label)
-                label_id.append(self.label_alphabet.get_index(label))
-                dict_feat = sum([2 ** i * x for i, x in enumerate(dict_feat)])
+                label_id.append(self.label_alphabet.get_index(label.lower()))
+                dict_feat = str(sum([2 ** i * x for i, x in enumerate(dict_feat)]))
                 dict_feats.append(dict_feat)
                 dict_id.append(self.dict_alphabet.get_index(dict_feat))
                 tags.append(tag)
-                tag_id.append(self.tag_alphabet.get_index(tag))
+                tag_id.append(self.tag_alphabet.get_index(tag.lower()))
             instence_texts.append([chars, dict_feats, tags, labels])
             instence_id.append([char_id, dict_id, tag_id, label_id])
         return instence_texts, instence_id
