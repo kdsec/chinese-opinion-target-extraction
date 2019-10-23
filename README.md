@@ -6,12 +6,12 @@ Pytorch implement of "Character-based BiLSTM-CRF Incorporating POS and Dictionar
 While this implement might work for many cases, it is only tested for environment below:
 
 ```
-python == 3.6.0
-torch == 0.4.1
+python == 3.6.8
+torch == 1.1.0
 thulac == 0.2.0
 tqdm
-keras == 2.1.2
-numpy == 1.15.3
+keras == 2.3.0
+numpy == 1.17.0
 numba
 ```
 
